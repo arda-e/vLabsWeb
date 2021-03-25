@@ -7,9 +7,9 @@ const HeroSection = () => {
                 <div className="text-gray-600 text-md md:text-xl font-normal text-center mt-2">You’re wondering how you’ll quickly transition your team to remote work. People are stressed,
                 work feels scattered, projects are slipping, and it’s tough to see + manage everything.</div>
             </div>
-            <div id="search-section" className="mt-10">
-                <input className="py-2 px-10 bg-gray-100 rounded-l-lg "type="text" name="title" value="Find best marketting"/>
-                <button className="bg-red-600 py-2 px-6 text-white rounded-r-lg" type="submit">sdfs</button>
+            <div id="search-section" className="mt-10 space-x-4">
+                <input className="py-2 px-10 bg-gray-100 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent "type="text" name="title" placeholder="Find best marketting"/>
+                <button className="bg-red-600  focus:outline-none py-2 px-6 text-white rounded-lg" type="submit">sdfs</button>
             </div>
         </section>
     )
