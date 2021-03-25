@@ -8,11 +8,11 @@ const Products = () => {
                 <h3 className="mt-2 text-center md:text-left text-md md:text-lg">You’re wondering how you’ll quickly transition your team to remote work. People are stressed, work feels scattered, projects are slipping, and it’s tough to see + manage everything.</h3>
             </div>
             <div className="grid grid-cols-3 grid-rows-2 gap-2 md:gap-10 ">
-                <ProductBox name="Visium Manage" description="Test Case Management" text="Lorem ipsum dolor sit amet" />
-                <ProductBox name="Visium Manage" description="Test Case Management" text="Lorem ipsum dolor sit amet" />
-                <ProductBox name="Visium Manage" description="Test Case Management" text="Lorem ipsum dolor sit amet" />
-                <ProductBox name="Visium Manage" description="Test Case Management" text="Lorem ipsum dolor sit amet" />
-                <ProductBox name="Visium Manage" description="Test Case Management" text="Lorem ipsum dolor sit amet" />
+                <ProductBox name="Manage" description="Test Case Management" text="Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat." />
+                <ProductBox name="Manage" description="Test Case Management" text="Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat." />
+                <ProductBox name="Manage" description="Test Case Management" text="Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat." />
+                <ProductBox name="Manage" description="Test Case Management" text="Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat." />
+                <ProductBox name="Manage" description="Test Case Management" text="Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat." />
             </div>
         </section>
     )
