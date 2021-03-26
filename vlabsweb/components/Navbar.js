@@ -43,11 +43,11 @@ const Navbar = () => {
                             </div>
                             <div id="dropdown-products" className="absolute float-right top-16 opacity-0 pointer-events-none sm:block dropdown">
                                 <div className="flex flex-col bg-white border border-gray-200 rounded shadow-lg">
-                                    <Link href="products/visiumfarm"><a title="Visium Farm" className="w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Farm</a></Link>
-                                    <Link href="products/visiumcrowd"><a title="Visium Crowd" className="w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Crowd</a></Link>
-                                    <Link href="products/visiummanage"><a title="Visium Manage"  className="w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Manage</a></Link>
-                                    <Link href="products/visiumgo"><a title="Visium Go" className="w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Go</a></Link>
-                                    <Link href="products/visiumload"><a title="Visium Load" className="w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Load</a></Link>
+                                    <Link href="products/visiumfarm"><a title="Visium Farm" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Farm</a></Link>
+                                    <Link href="products/visiumcrowd"><a title="Visium Crowd" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Crowd</a></Link>
+                                    <Link href="products/visiummanage"><a title="Visium Manage"  className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Manage</a></Link>
+                                    <Link href="products/visiumgo"><a title="Visium Go" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Go</a></Link>
+                                    <Link href="products/visiumload"><a title="Visium Load" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Load</a></Link>
                                 </div>
                             </div>
                             <Link href="/blog"><a className="text-gray-700 hover:text-red-700 px-3 text-sm font-medium">Blog</a></Link>
