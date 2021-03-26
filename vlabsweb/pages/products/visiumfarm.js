@@ -13,7 +13,7 @@ const visiumfarm = () => {
             <head>
                 <title>Visium Farm: On-Prem Cihaz Parkuru Çözümü</title>
             </head>
-            <section>
+            <section className="sticky top-0">
                 <SecondaryMenu name="Farm" />
             </section>
             <ProductHeroSection heading="On-Prem Cihaz Parkuru Çözümü" subheading="gerçej cihazlarda manuel testlerle karmaşık text senaryolarının üstesinden gelin veya paralel olarak çok sayıda otomasyon testi koşturun." backgroundSrc="" textPosition="left" />
