@@ -1,6 +1,6 @@
 const SecondaryMenu = () => {
     return (
-        <div className="flex bg-gray-200 items-center h-16">
+        <div className="top-0 flex bg-gray-200 items-center h-16">
             <div className="flex flex-row mx-32 self-stretch">
                 <div className="flex text-gray-700 text-2xl self-center font-semibold">
                     Manage
