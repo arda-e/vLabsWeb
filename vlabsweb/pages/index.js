@@ -6,7 +6,7 @@ import TestimonialBrands from '../components/TestimonialBrands'
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="max-w-7xl mx-auto">
       <Head>
         <title>Visium Labs</title>
       </Head>
