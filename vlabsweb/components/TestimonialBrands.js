@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const TestimonialBrands = () => {
     return (
-        <section className="flex justify-center bg-gray-50 py-10 flex-row px-10 space-x-4 md:space-x-16">
+        <section className="flex mx-auto justify-center bg-gray-50 py-10 flex-row space-x-4 md:space-x-16">
             <div className="flex"><Image src="/img/aksigorta.png" height="40" width="150" /></div>   
             <div className="flex"><Image src="/img/aktifbank.png" height="40" width="150" /></div>   
             <div className="flex"><Image src="/img/belbim.png" height="40" width="150" /></div>   
