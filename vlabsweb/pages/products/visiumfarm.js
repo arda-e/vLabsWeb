@@ -16,45 +16,47 @@ const visiumfarm = () => {
             </head>
             <SecondaryMenu name="Farm" />
             <ProductHeroSection heading="On-Prem Cihaz Parkuru Çözümü" subheading="gerçej cihazlarda manuel testlerle karmaşık text senaryolarının üstesinden gelin veya paralel olarak çok sayıda otomasyon testi koşturun." backgroundSrc="" textPosition="left" />
-            <section className="max-w-7xl flex flex-col px-32 xl:mx-auto mt-10">
+            <section className="max-w-7xl flex px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 xl:mx-auto self-center flex-col mt-10">
                 <H2 allign="center">Neden Visium Farm’ı tercih etmelisiniz?</H2>
                 <Text_Main allign="center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl potenti purus nisi, in nec et, ultricies. Vulputate convallis amet proin condimentum ut turpis neque nibh. Euismod consequat in massa tristique laoreet. Nisl consectetur diam amet adipiscing risus lectus tellus molestie dignissim. Sollicitudin quis malesuada lectus a, quam eget tellus.
             </Text_Main>
             </section>
-            <section className="max-w-7xl xl:mx-auto mt-10 flex flex-row px-32 space-x-4">
-                <div className="flex flex-col w-1/2 ">
-                    {/*  */}
-                    <div className="flex w-72 mb-10 flex-col">
-                        <div className="flex flex-row mb-3 items-center">
-                            <div className="flex mr-2 "><CloudArrowUp size={48} weight="duotone" color="#f54a23" /></div>
-                            <div className="flex font-bold text-xl">On-prem çözüm</div>
+            <section className="xl:mx-auto flex justify-center flex-row pt-10  space-x-4">
+                <div className="max-w-7xl flex flex-row md:flex-col items-center px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 space-x-4">
+                    <div className="flex flex-row tems-center md:items-start ">
+                        {/*  */}
+                        <div className="flex w-72 mb-10 flex-col items-center md:items-start">
+                            <div className="flex flex-col md:flex-row mb-3 items-center">
+                                <div className="flex mr-2 "><CloudArrowUp size={48} weight="duotone" color="#f54a23" /></div>
+                                <div className="flex font-bold text-xl">On-prem çözüm</div>
+                            </div>
+                            <div className="font-normal text-center md:text-left text-sm">Kendi lokasyonunuzda bir cihaz parkuruna sahip olmak hiç bu kadar kolay olmamıştı.</div>
                         </div>
-                        <div className="font-normal text-sm">Kendi lokasyonunuzda bir cihaz parkuruna sahip olmak hiç bu kadar kolay olmamıştı.</div>
-                    </div>
-                    {/*  */}
-                    <div className="flex w-72 mb-10 flex-col">
-                        <div className="flex flex-row mb-3 items-center">
-                            <div className="flex mr-2 animate-spin "><Gear size={48} weight="duotone" color="#f54a23" /></div>
-                            <div className="flex font-bold text-xl">Test Otomasyonu</div>
+                        {/*  */}
+                        <div className="flex w-72 mb-10 flex-col justify-center">
+                            <div className="flex flex-col md:flex-row mb-3 items-center">
+                                <div className="flex mr-2 "><Gear size={48} weight="duotone" color="#f54a23" /></div>
+                                <div className="flex font-bold text-xl">Test Otomasyonu</div>
+                            </div>
+                            <div className="font-normal text-center md:text-left text-sm">Otomasyon testleri ile aynı anda paralel olarak birden fazla cihazda test koşabilirsiniz.</div>
                         </div>
-                        <div className="font-normal text-sm">Otomasyon testleri ile aynı anda paralel olarak birden fazla cihazda test koşabilirsiniz.</div>
-                    </div>
-                    {/*  */}
-                    <div className="flex w-72 mb-10 flex-col">
-                        <div className="flex flex-row mb-3 items-center">
-                            <div className="flex mr-2 animate-bounce"><Coin size={48} weight="duotone" color="#f54a23" /></div>
-                            <div className="flex font-bold text-xl">Maliyet Avantajı</div>
+                        {/*  */}
+                        <div className="flex w-72 mb-10 flex-col items-center md:items-start">
+                            <div className="flex flex-col md:flex-row mb-3 items-center">
+                                <div className="flex mr-2 animate-bounce"><Coin size={48} weight="duotone" color="#f54a23" /></div>
+                                <div className="flex font-bold text-xl">Maliyet Avantajı</div>
+                            </div>
+                            <div className="font-normal text-center md:text-left  text-sm">Özelliklerine göre piyasadaki en iyi fiyatlandırma</div>
                         </div>
-                        <div className="font-normal text-sm">Özelliklerine göre piyasadaki en iyi fiyatlandırma</div>
                     </div>
-                </div>
-                <div className="flex w-1/2">
-                    <Image className="flex" src="/img/GifFarmDevMan.gif" height="100%" width="1000" />
+                    <div className="flex">
+                        <Image className="flex" src="/img/GifFarmDevMan.gif" height="500" width="1000" />
+                    </div>
                 </div>
             </section>
-            <section className="max-w-7xl xl:mx-auto py-12 px-32 bg-gray-100">
-                <div className="grid grid-cols-4 gap-10">
+            <section className=" flex xl:mx-auto py-10 justify-center bg-gray-100">
+                <div className="max-w-7xl px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 self-center gap-10">
                     <div className="flex flex-col mb-3 space-y-3 items-start">
                         <Cloud size={48} weight="duotone" color="#f54a23" />
                         <div className="flex font-bold text-xl">Ölçeklenebilir Mimari</div>
