@@ -1,9 +1,10 @@
 import ProductHeroSection from "../../components/Products/ProductHeroSection"
-import SecondaryMenu from "../../components/SecondaryMenu"
+import SecondaryMenu from "../../components/SecondaryMenu/SecondaryMenu"
 import Head from 'next/head'
 import Image from 'next/image'
 import Text_Main from "../../components/Text/Text_Main"
 import H2 from "../../components/Text/H2"
+import Footer from "../../components/Footer"
 import { AppWindow, Book, Cloud, CloudArrowUp, Coin, Database, Gauge, Gear, ProjectorScreenChart, Translate, TreeStructure, Users } from 'phosphor-react'
 import ScrollUpBtn from "../../components/Products/ScrollUpBtn"
 
@@ -13,17 +14,15 @@ const visiumfarm = () => {
             <head>
                 <title>Visium Farm: On-Prem Cihaz Parkuru Çözümü</title>
             </head>
-            <section className="sticky top-0">
-                <SecondaryMenu name="Farm" />
-            </section>
+            <SecondaryMenu name="Farm" />
             <ProductHeroSection heading="On-Prem Cihaz Parkuru Çözümü" subheading="gerçej cihazlarda manuel testlerle karmaşık text senaryolarının üstesinden gelin veya paralel olarak çok sayıda otomasyon testi koşturun." backgroundSrc="" textPosition="left" />
-            <section className="mt-10 mx-32">
+            <section className="max-w-7xl flex flex-col px-32 xl:mx-auto mt-10">
                 <H2 allign="center">Neden Visium Farm’ı tercih etmelisiniz?</H2>
                 <Text_Main allign="center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl potenti purus nisi, in nec et, ultricies. Vulputate convallis amet proin condimentum ut turpis neque nibh. Euismod consequat in massa tristique laoreet. Nisl consectetur diam amet adipiscing risus lectus tellus molestie dignissim. Sollicitudin quis malesuada lectus a, quam eget tellus.
             </Text_Main>
             </section>
-            <section className="mt-10 flex flex-row mx-32 space-x-4">
+            <section className="max-w-7xl xl:mx-auto mt-10 flex flex-row px-32 space-x-4">
                 <div className="flex flex-col w-1/2 ">
                     {/*  */}
                     <div className="flex w-72 mb-10 flex-col">
@@ -54,49 +53,51 @@ const visiumfarm = () => {
                     <Image className="flex" src="/img/GifFarmDevMan.gif" height="100%" width="1000" />
                 </div>
             </section>
-            <section className="px-32 py-12 gap-10 bg-gray-100 grid grid-cols-4">
-                <div className="flex flex-col mb-3 space-y-3 items-start">
-                    <Cloud size={48} weight="duotone" color="#f54a23" />
-                    <div className="flex font-bold text-xl">Ölçeklenebilir Mimari</div>
-                    <div className="font-normal text-sm">Sunucu ve istemci modu ile ölçeklenebilirlik. Sunucuya bağlı cihazlar da test uygulaması için kullanılabilir.</div>
-                </div>
-                <div className="flex flex-col mb-3 space-y-3 items-start">
-                    <Gauge size={48} weight="duotone" color="#f54a23" />
-                    <div className="flex font-bold text-xl">Manuel ve Otomasyon Testi</div>
-                    <div className="font-normal text-sm">Sunucu ve istemci modu ile ölçeklenebilirlik. Sunucuya bağlı cihazlar da test uygulaması için kullanılabilir.</div>
-                </div>
-                <div className="flex flex-col mb-3 space-y-3 items-start">
-                    <AppWindow size={48} weight="duotone" color="#f54a23" />
-                    <div className="flex font-bold text-xl">BDD &amp; Visium GO desteği​</div>
-                    <div className="font-normal text-sm">Standart Appium JSONWP protokolünü destekleyen her test otomasyon sistemi kolayca entegre edilebilir.</div>
-                </div>
-                <div className="flex flex-col mb-3 space-y-3 items-start">
-                    <Users size={48} weight="duotone" color="#f54a23" />
-                    <div className="flex font-bold text-xl">LDAP Entegrasyonu</div>
-                    <div className="font-normal  text-sm">Kullanıcı yönetimini, LDAP server ya da Microsoft Active Directory ile yapabildiğiniz gibi manuel olarakta kullanıcı ekleyebilirsiniz.</div>
-                </div>
-                <div className="flex flex-col mb-3 space-y-3 items-start">
-                    <Translate size={48} weight="duotone" color="#f54a23" />
-                    <div className="flex font-bold mt-3 text-xl">Multi Lingual Support</div>
-                    <div className="font-normal  text-sm">Visium Farm’da  3 dil desteği bulunmakta ve esnek altyapısı sayesinde yeni dilleri eklemek çok basit!</div>
-                </div>
-                <div className="flex flex-col mb-3 space-y-3  items-start">
-                    <ProjectorScreenChart size={48} weight="duotone" color="#f54a23" />
-                    <div className="flex font-bold text-xl">Raporlama</div>
-                    <div className="font-normal text-sm">Daha iyi bir sonuç elde etmek adına detaylı raporlardan yararlanın.</div>
-                </div>
-                <div className="flex flex-col mb-3 space-y-3 items-start">
-                    <TreeStructure size={48} weight="duotone" color="#f54a23" />
-                    <div className="flex font-bold text-xl">Rest API Desteği</div>
-                    <div className="font-normal text-sm">Başarılı bir şekilde tasarlanmış API end-pointleri aracıyla bütün fonksiyonlara ulaşın.</div>   
+            <section className="max-w-7xl xl:mx-auto py-12 px-32 bg-gray-100">
+                <div className="grid grid-cols-4 gap-10">
+                    <div className="flex flex-col mb-3 space-y-3 items-start">
+                        <Cloud size={48} weight="duotone" color="#f54a23" />
+                        <div className="flex font-bold text-xl">Ölçeklenebilir Mimari</div>
+                        <div className="font-normal text-sm">Sunucu ve istemci modu ile ölçeklenebilirlik. Sunucuya bağlı cihazlar da test uygulaması için kullanılabilir.</div>
+                    </div>
+                    <div className="flex flex-col mb-3 space-y-3 items-start">
+                        <Gauge size={48} weight="duotone" color="#f54a23" />
+                        <div className="flex font-bold text-xl">Manuel ve Otomasyon Testi</div>
+                        <div className="font-normal text-sm">Sunucu ve istemci modu ile ölçeklenebilirlik. Sunucuya bağlı cihazlar da test uygulaması için kullanılabilir.</div>
+                    </div>
+                    <div className="flex flex-col mb-3 space-y-3 items-start">
+                        <AppWindow size={48} weight="duotone" color="#f54a23" />
+                        <div className="flex font-bold text-xl">BDD &amp; Visium GO desteği​</div>
+                        <div className="font-normal text-sm">Standart Appium JSONWP protokolünü destekleyen her test otomasyon sistemi kolayca entegre edilebilir.</div>
+                    </div>
+                    <div className="flex flex-col mb-3 space-y-3 items-start">
+                        <Users size={48} weight="duotone" color="#f54a23" />
+                        <div className="flex font-bold text-xl">LDAP Entegrasyonu</div>
+                        <div className="font-normal  text-sm">Kullanıcı yönetimini, LDAP server ya da Microsoft Active Directory ile yapabildiğiniz gibi manuel olarakta kullanıcı ekleyebilirsiniz.</div>
+                    </div>
+                    <div className="flex flex-col mb-3 space-y-3 items-start">
+                        <Translate size={48} weight="duotone" color="#f54a23" />
+                        <div className="flex font-bold mt-3 text-xl">Multi Lingual Support</div>
+                        <div className="font-normal  text-sm">Visium Farm’da  3 dil desteği bulunmakta ve esnek altyapısı sayesinde yeni dilleri eklemek çok basit!</div>
+                    </div>
+                    <div className="flex flex-col mb-3 space-y-3  items-start">
+                        <ProjectorScreenChart size={48} weight="duotone" color="#f54a23" />
+                        <div className="flex font-bold text-xl">Raporlama</div>
+                        <div className="font-normal text-sm">Daha iyi bir sonuç elde etmek adına detaylı raporlardan yararlanın.</div>
+                    </div>
+                    <div className="flex flex-col mb-3 space-y-3 items-start">
+                        <TreeStructure size={48} weight="duotone" color="#f54a23" />
+                        <div className="flex font-bold text-xl">Rest API Desteği</div>
+                        <div className="font-normal text-sm">Başarılı bir şekilde tasarlanmış API end-pointleri aracıyla bütün fonksiyonlara ulaşın.</div>
+                    </div>
                 </div>
             </section>
-            <section id="case-study" className="px-32 py-12 flex flex-row">
+            <section id="case-study" className="xl-auto px-32 py-12 flex flex-row">
                 <div className="flex flex-col w-1/2 space-y-4 mr-10">
                     <div className="">Pademi süreci ile birlikte fiziksel cihaz üzerindeki mobil testlerin uzaktan yapılabilmesi ihtiyacı bir anda arttı. Kısa zamanda Visium Farm’ın Akbank içerisinde konumlandırdık ve ekiplerin kullanımına açtık.</div>
                     <div> Özellikle kurulum gerektirmeden browser üzerinden tüm cihazlara erişilecek bir platform olması ve sorunsuz çalışıyor olması kısa zamanda tüm ekipler tarafında benimsenmesini sağladı. Ayrıca mobil test otomasyonlarımız için de Visium Farm üzerindeki cihazları kolayca test otomasyon altyapılarımıza entegre ettik.</div>
                     <div>
-                    Önümüzdeki dönemde cihaz çeşitliliğimizi arttırarak tüm mobil cihaz ihtiyacı duyduğumuz testlerimizi bu platform üzerine kaydırmak için çalışmalarımıza devam ediyoruz.
+                        Önümüzdeki dönemde cihaz çeşitliliğimizi arttırarak tüm mobil cihaz ihtiyacı duyduğumuz testlerimizi bu platform üzerine kaydırmak için çalışmalarımıza devam ediyoruz.
                     </div>
                 </div>
                 <div className="flex w-1/2 ml-10 ">
