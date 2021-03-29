@@ -2,7 +2,7 @@ import { AppWindow, Book, Cloud, CloudArrowUp, Coin, Database, Gauge, Gear, Proj
 
 const VisiumFarmFeatures = () => {
     return (
-        <section id="features" className=" flex xl:mx-auto py-10 justify-center bg-gray-100">
+        <section id="features" className=" flex xl:mx-auto pt-32 pb-24 justify-center bg-gray-100">
         <div className="max-w-7xl px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 self-center gap-10">
             <div className="flex flex-col mb-3 space-y-3 items-start">
                 <Cloud size={48} weight="duotone" color="#f54a23" />

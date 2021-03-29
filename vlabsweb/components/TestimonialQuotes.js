@@ -2,8 +2,8 @@
 const TestimonialQuotes = () => {
   return (
 
-<section id="case-studies" className="text-gray-600 body-font">
-  <div className="container py-4 sm:px-8 md:px-10 lg:px:24 xl:px-32 pt-24 mx-auto">
+<section id="case-studies" className="text-gray-600">
+  <div className="container max-w-7xl py-4 sm:px-8 md:px-10 lg:px:24 xl:px-32 pt-32 mx-auto">
     <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
     <div className="flex flex-wrap -m-4">
       <div className="p-4 md:w-1/2 w-full">

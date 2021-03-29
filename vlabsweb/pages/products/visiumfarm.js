@@ -19,15 +19,15 @@ const visiumfarm = () => {
             </head>
             <SecondaryMenu name="Farm" />
             <ProductHeroSection id="overview" heading="On-Prem Cihaz Parkuru Çözümü" subheading="gerçej cihazlarda manuel testlerle karmaşık text senaryolarının üstesinden gelin veya paralel olarak çok sayıda otomasyon testi koşturun." backgroundSrc="" textPosition="left" />
-            <section  className="max-w-7xl flex px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 xl:mx-auto self-center flex-col mt-10">
+            <section  className="max-w-7xl container flex px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 xl:mx-auto self-center flex-col mt-10">
                 <H2 allign="center">Neden Visium Farm’ı tercih etmelisiniz?</H2>
                 <Text_Main allign="center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl potenti purus nisi, in nec et, ultricies. Vulputate convallis amet proin condimentum ut turpis neque nibh. Euismod consequat in massa tristique laoreet. Nisl consectetur diam amet adipiscing risus lectus tellus molestie dignissim. Sollicitudin quis malesuada lectus a, quam eget tellus.
             </Text_Main>
             </section>
-            <section className="xl:mx-auto flex justify-center flex-row pt-10  space-x-4">
-                <div className="max-w-7xl flex flex-row md:flex-col items-center px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 space-x-4">
-                    <div className="flex flex-row tems-center md:items-start ">
+            <section className="flex justify-center flex-row pt-10 space-x-4">
+                <div className="max-w-7xl flex flex-row md:flex-col items-center px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32">
+                    <div className="flex flex-row justify-between">
                         {/*  */}
                         <div className="flex w-72 mb-10 flex-col items-center md:items-start">
                             <div className="flex flex-col md:flex-row mb-3 items-center">
@@ -53,7 +53,7 @@ const visiumfarm = () => {
                             <div className="font-normal text-center md:text-left  text-sm">Özelliklerine göre piyasadaki en iyi fiyatlandırma</div>
                         </div>
                     </div>
-                    <div className="flex">
+                    <div className="flex mt-5">
                         <Image className="flex" src="/img/GifFarmDevMan.gif" height="500" width="1000" />
                     </div>
                 </div>

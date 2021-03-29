@@ -1,7 +1,7 @@
-
+import Link from 'next/link'
 const Footer2 = () => {
     return (
-<footer className="text-gray-600 bg-red-100 body-font">
+<footer className="text-gray-600 bg-gray-100 body-font">
   <div className="container sm:px-8 md:px-10 lg:px:24 xl:px-32 pt-24 pb-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -48,13 +48,13 @@ const Footer2 = () => {
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">COMPANY</h2>
         <nav className="list-none mb-10">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">About Us</a>
+            <Link href="/about-us"><a className="text-gray-600 hover:text-gray-800">About Us</a></Link>
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800">Career</a>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Contact Us</a>
+            <Link href="/contact"><a className="text-gray-600 hover:text-gray-800">Contact Us</a></Link>
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800"></a>
@@ -65,13 +65,13 @@ const Footer2 = () => {
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav className="list-none mb-10">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+            <Link href="privacy-policy"><a className="text-gray-600 hover:text-gray-800">Privacy Policy</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Terms&amp;Conditions</a>
+            <Link href="terms"><a className="text-gray-600 hover:text-gray-800">Terms&amp;Conditions</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Site Map</a>
+            <Link href="site-map"><a className="text-gray-600 hover:text-gray-800">Site Map</a></Link>
           </li>
 
         </nav>

@@ -2,7 +2,7 @@
 const HeroSection = () => {
     return (
         <section className="flex px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 flex-col items-center justify-center h-80 ">
-            <div className="max-w-7xl flex flex-col items-center">
+            <div className="container flex flex-col items-center">
             <div className="">
                 <div className="text-gray-600 text-4xl md:text-5xl font-semibold text-center">All About Test</div>
                 <div className="text-gray-600 text-md md:text-xl font-normal text-center mt-2">You’re wondering how you’ll quickly transition your team to remote work. People are stressed,

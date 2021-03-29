@@ -4,7 +4,7 @@ import ResponsiveWrapper from '../../components/ResponsiveWrapper'
 const index = () => {
     return (
         <>
-            <ProductHeroSection heading="About Us" textPosition="center" />
+            <ProductHeroSection heading="About Us" textPosition="left" />
             <ResponsiveWrapper>
                 <div className="my-10">
                     <div className="font-base text-gray-600 leading-8  ">

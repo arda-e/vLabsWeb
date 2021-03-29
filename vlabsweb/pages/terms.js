@@ -1,6 +1,6 @@
 import ProductHeroSection from '../components/Products/ProductHeroSection'
 import Text_Main from '../components/Text/Text_Main'
-const termsofservice = () => {
+const terms = () => {
     return (
         <div>
             <ProductHeroSection heading="Terms of Service" />
@@ -13,4 +13,4 @@ Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante
     )
 }
 
-export default termsofservice
+export default terms
