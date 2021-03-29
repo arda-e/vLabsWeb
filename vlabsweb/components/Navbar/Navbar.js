@@ -1,17 +1,17 @@
+import { useEffect, useState, useRef  } from 'react'
+import { useDetectOutsideClick } from './useDetectOutsideClick'
 import Link from 'next/link'
 import Image from 'next/image'
-import ResponsiveWrapper from './ResponsiveWrapper'
+import ResponsiveWrapper from '../ResponsiveWrapper'
 
 const Navbar = () => {
+    const dropdownRef = useRef(null)
+    const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false)
+    const onClick = () => setIsActive(!isActive)
+
     const toggleMobileMenu = () => {
         const mobileMenu = document.getElementById('mobile-menu')
         mobileMenu.classList.toggle('hidden')
-    }
-    const toggleProductsDropdown = () => {
-        const productsDropdown = document.getElementById('dropdown-products')
-        console.log("dropdown-clicked")
-        productsDropdown.classList.toggle('opacity-100')
-        productsDropdown.classList.toggle('pointer-events-none')
     }
     return (
         <nav id="navbar" className="bg-gray-100">
@@ -38,19 +38,26 @@ const Navbar = () => {
                     <div className="hidden sm:flex sm:ml-6 h-full items-stretch" >
                         <div className="flex space-x-4 items-center">
                             <Link href="/about-us"><a className="flex text-gray-700 hover:text-red-700 px-3 text-sm font-semibold">About Us</a></Link>
-                            <div onClick={toggleProductsDropdown} className="flex flex-row items-center">
+                            <div onClick={(e) => setIsActive(true)}className="flex flex-row items-center">
                                 <a className="text-gray-700 pl-3 pr-1 text-sm font-semibold">Products</a>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="208 96 128 176 48 96" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
                             </div>
-                            <div id="dropdown-products" className="absolute float-right top-16 opacity-0 pointer-events-none sm:block dropdown">
-                                <div className="flex flex-col bg-white border border-gray-200 rounded shadow-lg">
-                                    <Link href="products/visiumfarm"><a title="Visium Farm" className="transition duration-700 ease-in-out w-full px-6 py-2 text-smopacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Farm</a></Link>
-                                    <Link href="products/visiumcrowd"><a title="Visium Crowd" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Crowd</a></Link>
-                                    <Link href="products/visiummanage"><a title="Visium Manage"  className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Manage</a></Link>
-                                    <Link href="products/visiumgo"><a title="Visium Go" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Go</a></Link>
-                                    <Link href="products/visiumload"><a title="Visium Load" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm opacity-75 text-secondary hover:opacity-100 whitespace-nowrap">Visium Load</a></Link>
-                                </div>
-                            </div>
+                            {/*  */}
+                            {isActive ?
+                            <div ref={dropdownRef} className="z-30 flex absolute bg-gray-100 top-16 right-32 w-56 flex-col transition duration-300  ease-in-out opacity-100 border border-t-0 border-gray-200 rounded-b shadow-lg">
+                                    <Link href="products/visiumfarm"><a onClick={(e) => setIsActive(false)} title="Visium Farm" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Farm</a></Link>
+                                    <Link href="products/visiumcrowd"><a onClick={(e) => setIsActive(false)} title="Visium Crowd" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Crowd</a></Link>
+                                    <Link href="products/visiummanage"><a onClick={(e) => setIsActive(false)} title="Visium Manage" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Manage</a></Link>
+                                    <Link href="products/visiumgo"><a onClick={(e) => setIsActive(false)} title="Visium Go" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Go</a></Link>
+                                    <Link href="products/visiumload"><a onClick={(e) => setIsActive(false)} title="Visium Load" className="transition duration-700 ease-in-out px-6 py-2 text-sm opac hover:bg-gray-200 hover:font-semibold">Visium Load</a></Link>
+                                </div> : 
+                                <div ref={dropdownRef} className="flex absolute top-16 right-32 w-526flex-col transition duration-300  ease-in-out opacity-0 pointer-events-none bg-white border border-gray-200 rounded-b shadow-lg">
+                                    <Link href="products/visiumfarm"><a title="Visium Farm" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Farm</a></Link>
+                                    <Link href="products/visiumcrowd"><a title="Visium Crowd" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Crowd</a></Link>
+                                    <Link href="products/visiummanage"><a title="Visium Manage" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Manage</a></Link>
+                                    <Link href="products/visiumgo"><a title="Visium Go" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Go</a></Link>
+                                    <Link href="products/visiumload"><a title="Visium Load" className="transition duration-700 ease-in-out px-6 py-2 text-sm opac hover:bg-gray-200 hover:font-semibold">Visium Load</a></Link>
+                                </div> }
                             <Link href="/blog"><a className="text-gray-700 hover:text-red-700 px-3 text-sm font-semibold">Blog</a></Link>
                             <Link href="/visium-academy"><a className="text-gray-700 hover:text-red-700 px-3 text-sm font-semibold">Visium Academy</a></Link>
                         </div>
