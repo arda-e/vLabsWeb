@@ -9,6 +9,7 @@ import { AppWindow, Book, Cloud, CloudArrowUp, Coin, Database, Gauge, Gear, Proj
 import ScrollUpBtn from "../../components/Products/ScrollUpBtn"
 import VisiumFarmFeatures from "./VisiumFarmFeatures"
 import CTA from "../../components/CTA"
+import TestimonialQuotes from "../../components/TestimonialQuotes"
 
 const visiumfarm = () => {
     return (
@@ -58,18 +59,7 @@ const visiumfarm = () => {
                 </div>
             </section>
             <VisiumFarmFeatures/>
-            <section id="case-study" className="xl-auto px-32 py-12 flex flex-row">
-                <div className="flex flex-col w-1/2 space-y-4 mr-10">
-                    <div className="">Pademi süreci ile birlikte fiziksel cihaz üzerindeki mobil testlerin uzaktan yapılabilmesi ihtiyacı bir anda arttı. Kısa zamanda Visium Farm’ın Akbank içerisinde konumlandırdık ve ekiplerin kullanımına açtık.</div>
-                    <div> Özellikle kurulum gerektirmeden browser üzerinden tüm cihazlara erişilecek bir platform olması ve sorunsuz çalışıyor olması kısa zamanda tüm ekipler tarafında benimsenmesini sağladı. Ayrıca mobil test otomasyonlarımız için de Visium Farm üzerindeki cihazları kolayca test otomasyon altyapılarımıza entegre ettik.</div>
-                    <div>
-                        Önümüzdeki dönemde cihaz çeşitliliğimizi arttırarak tüm mobil cihaz ihtiyacı duyduğumuz testlerimizi bu platform üzerine kaydırmak için çalışmalarımıza devam ediyoruz.
-                    </div>
-                </div>
-                <div className="flex w-1/2 ml-10 ">
-                    <div className="flex w-full h-full justify-center place-self-center bg-gray-300">Image</div>
-                </div>
-            </section>
+            <TestimonialQuotes />
             <CTA buttonLabel="Learn More">Learn more about the Visium Farm product and the Visium Labs product line and schedule a demo.</CTA>
             <ScrollUpBtn />
         </>
