@@ -3,10 +3,10 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className="bg-red-600  h-16 py-10 flex items-center text-white w-full ">
-            <div className="max-w-7xl container mx-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 flex">
-                <div className="flex font-bold items-center space-x-10">
+            <div className="max-w-7xl container sm:px-8 md:px-10 lg:px:24 xl:px-32 flex justify-between items-center">
+                <div className="flex flex-col space-y-1">
                     <span className="font-bold text-lg">Visium Labs</span>
-                    <span>2021 All Rights Reserved</span>
+                    <span className="font-normal text-sm">2021 All Rights Reserved</span>
                 </div>
                 <div className="flex space-x-10">
                     <Link href="/termsofservice"><a className="cursor-pointer">Terms of Service</a></Link>
