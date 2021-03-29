@@ -51,7 +51,7 @@ const Navbar = () => {
                                     <Link href="products/visiumgo"><a onClick={(e) => setIsActive(false)} title="Visium Go" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Go</a></Link>
                                     <Link href="products/visiumload"><a onClick={(e) => setIsActive(false)} title="Visium Load" className="transition duration-700 ease-in-out px-6 py-2 text-sm opac hover:bg-gray-200 hover:font-semibold">Visium Load</a></Link>
                                 </div> : 
-                                <div ref={dropdownRef} className="flex absolute top-16 right-32 w-526flex-col transition duration-300  ease-in-out opacity-0 pointer-events-none bg-white border border-gray-200 rounded-b shadow-lg">
+                                <div ref={dropdownRef} className="flex absolute top-16 right-32 w-56 flex-col transition duration-300  ease-in-out opacity-0 pointer-events-none bg-white border border-gray-200 rounded-b shadow-lg">
                                     <Link href="products/visiumfarm"><a title="Visium Farm" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Farm</a></Link>
                                     <Link href="products/visiumcrowd"><a title="Visium Crowd" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Crowd</a></Link>
                                     <Link href="products/visiummanage"><a title="Visium Manage" className="transition duration-700 ease-in-out w-full px-6 py-2 text-sm  hover:bg-gray-200 hover:font-semibold">Visium Manage</a></Link>
