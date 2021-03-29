@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import ResponsiveWrapper from './ResponsiveWrapper'
 
 const Navbar = () => {
     const toggleMobileMenu = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
     }
     return (
         <nav id="navbar" className="bg-gray-100">
-            <div className="max-w-7xl mx-auto px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 ">
+                <ResponsiveWrapper>
                 <div className="relative flex items-center justify-between h-16">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <button type="button" className="justify-center p-2 rounded-md text-gray-400  hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onClick={toggleMobileMenu} aria-controls="mobile-menu" aria-expanded="false">
@@ -64,7 +65,7 @@ const Navbar = () => {
                         <Link href="/visium-academy"><a className="text-gray-700 hover:text-red-700 px-3 text-sm font-medium">Visium Academy</a></Link>
                     </div>
                 </div>
-            </div>
+            </ResponsiveWrapper>
         </nav>
     )
 }
