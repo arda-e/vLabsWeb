@@ -54,13 +54,13 @@ const visiumfarm = () => {
                         </div>
                     </div>
                     <div className="flex mt-5">
-                        <Image className="flex" src="/img/GifFarmDevMan.gif" height="500" width="1000" />
+                        <Image className="flex" src="/img/GifFarmDevMan.gif" height="250" width="500" />
                     </div>
                 </div>
             </section>
             <VisiumFarmFeatures/>
             <TestimonialQuotes />
-            <CTA buttonLabel="Learn More">Learn more about the Visium Farm product and the Visium Labs product line and schedule a demo.</CTA>
+            <CTA buttonLink="/contact" buttonLabel="Learn More">Learn more about the Visium Farm product and the Visium Labs product line and schedule a demo.</CTA>
             <ScrollUpBtn />
         </>
     )
