@@ -3,6 +3,7 @@ import { useDetectOutsideClick } from './useDetectOutsideClick'
 import Link from 'next/link'
 import Image from 'next/image'
 import ResponsiveWrapper from '../ResponsiveWrapper'
+import { Gauge, TreeStructure, Users, ClipboardText, Headset, DeviceMobile, Browsers } from 'phosphor-react'
 
 const Navbar = () => {
     const dropdownRef = useRef(null)
@@ -47,43 +48,55 @@ const Navbar = () => {
                             <div ref={dropdownRef} className={ isActive ?  dropdownClassActive : dropdownClassDeActive }>
                                     <Link href="products/visiumlabs">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
-                                            <a onClick={(e) => setIsActive(false)} title="Visium labs" className="transition duration-700 ease-in-out flex w-full text-base font-semibold text-gray-700 hover:font-semibold">Visium Desk</a>
-                                            <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
+                                        <div className=" flex flex-row gap-2 items-center">
+                                            <Headset size={32} className="m-0" weight="duotone" color="#3f3f3f" />
+                                            <a onClick={(e) => setIsActive(false)} title="Visium Desk" className="transition duration-700 ease-in-out flex w-full text-base font-bold text-gray-700 hover:font-semibold">Visium Desk</a>
                                         </div>
-                                    </Link>
-                                    <Link href="products/visiumdesk">
-                                        <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer" >   
-                                            <a onClick={(e) => setIsActive(false)} title="Visium Desk" className="transition duration-700 ease-in-out flex w-full text-base font-semibold text-gray-700  hover:font-semibold">Visium Desk</a>
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
                                     <Link href="products/visiumfarm">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
-                                            <a onClick={(e) => setIsActive(false)} title="Visium Farm" className="transition duration-700 ease-in-out flex w-full text-base font-semibold text-gray-700  hover:font-semibold">Visium Farm</a>
+                                        <div className=" flex flex-row gap-2 items-center">
+                                            <TreeStructure size={32} className="m-0" weight="duotone" color="#3f3f3f" />
+                                            <a onClick={(e) => setIsActive(false)} title="Visium Farm" className="transition duration-700 ease-in-out flex w-full text-base font-bold text-gray-700">Visium Farm</a>
+                                        </div>   
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
                                     <Link href="products/visiumgo">
-                                        <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
-                                            <a onClick={(e) => setIsActive(false)} title="Visium Go" className="transition duration-700 ease-in-out flex w-full text-base font-semibold text-gray-700  hover:font-semibold">Visium Go</a>
+                                        <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">  
+                                        <div className=" flex flex-row gap-2 items-center">
+                                            <DeviceMobile size={32} className="m-0" weight="duotone" color="#3f3f3f" /> 
+                                            <a onClick={(e) => setIsActive(false)} title="Visium Go" className="transition duration-700 ease-in-out flex w-full text-base font-bold text-gray-700 ">Visium Go</a>
+                                        </div>
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
                                     <Link href="products/visiumcrowd">
-                                        <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
-                                            <a onClick={(e) => setIsActive(false)} title="Visium Crowd" className="transition duration-700 ease-in-out flex w-full text-base font-semibold text-gray-700  hover:font-semibold">Visium Crowd</a>
+                                        <div className=" hover:bg-gray-200 rounded-md px-6 pt-2 pb-3 cursor-pointer">   
+                                        <div className=" flex flex-row gap-2 items-center">
+                                            <Users size={32} className="m-0" weight="duotone" color="#3f3f3f" />
+                                            <a onClick={(e) => setIsActive(false)} title="Visium Crowd" className="transition duration-700 ease-in-out flex w-full text-base font-bold text-gray-700">Visium Crowd</a>
+                                        </div> 
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
                                     <Link href="products/visiummanage">
-                                        <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
-                                            <a onClick={(e) => setIsActive(false)} title="Visium Manage" className="transition duration-700 ease-in-out flex w-full text-base font-semibold text-gray-700  hover:font-semibold">Visium Manage</a>
+                                        <div className=" hover:bg-gray-200 rounded-md px-6 pt-2 pb-3 cursor-pointer">   
+                                        <div className=" flex flex-row gap-2 items-center">
+                                            <Browsers size={32} className="m-0" weight="duotone" color="#3f3f3f" />
+                                            <a onClick={(e) => setIsActive(false)} title="Visium Manage" className="transition duration-700 ease-in-out flex w-full text-base font-bold text-gray-700">Visium Manage</a>
+                                        </div>
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
                                     <Link href="products/visiumload">
-                                        <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
-                                            <a onClick={(e) => setIsActive(false)} title="Visium Load" className="transition duration-700 ease-in-out flex w-full text-base font-semibold text-gray-700  hover:font-semibold">Visium Load</a>
+                                        <div className=" hover:bg-gray-200 rounded-md px-6 pt-2 pb-3 cursor-pointer">   
+                                        <div className=" flex flex-row gap-2 items-center">
+                                            <Gauge size={32} className="m-0" weight="duotone" color="#3f3f3f" />
+                                            <a onClick={(e) => setIsActive(false)} title="Visium Load" className="transition duration-700 ease-in-out flex w-full text-base font-bold text-gray-700">Visium Load</a>
+                                        </div>
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
