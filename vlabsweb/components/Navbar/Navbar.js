@@ -46,7 +46,7 @@ const Navbar = () => {
                             </div>
                             {/*  */}
                             <div ref={dropdownRef} className={ isActive ?  dropdownClassActive : dropdownClassDeActive }>
-                                    <Link href="products/visiumlabs">
+                                    <Link href="products/visium-desk">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
                                         <div className=" flex flex-row gap-2 items-center">
                                             <Headset size={32} className="m-0" weight="duotone" color="#3f3f3f" />
@@ -55,7 +55,7 @@ const Navbar = () => {
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
-                                    <Link href="products/visiumfarm">
+                                    <Link href="products/visium-farm">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">   
                                         <div className=" flex flex-row gap-2 items-center">
                                             <TreeStructure size={32} className="m-0" weight="duotone" color="#3f3f3f" />
@@ -64,7 +64,7 @@ const Navbar = () => {
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
-                                    <Link href="products/visiumgo">
+                                    <Link href="products/visium-go">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 py-2 cursor-pointer">  
                                         <div className=" flex flex-row gap-2 items-center">
                                             <DeviceMobile size={32} className="m-0" weight="duotone" color="#3f3f3f" /> 
@@ -73,7 +73,7 @@ const Navbar = () => {
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
-                                    <Link href="products/visiumcrowd">
+                                    <Link href="products/visium-crowd">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 pt-2 pb-3 cursor-pointer">   
                                         <div className=" flex flex-row gap-2 items-center">
                                             <Users size={32} className="m-0" weight="duotone" color="#3f3f3f" />
@@ -82,7 +82,7 @@ const Navbar = () => {
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
-                                    <Link href="products/visiummanage">
+                                    <Link href="products/visium-manage">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 pt-2 pb-3 cursor-pointer">   
                                         <div className=" flex flex-row gap-2 items-center">
                                             <Browsers size={32} className="m-0" weight="duotone" color="#3f3f3f" />
@@ -91,7 +91,7 @@ const Navbar = () => {
                                             <p className="text-gray-600 text-xs"> Lorem ipsum dolor sit amet</p>   
                                         </div>
                                     </Link>
-                                    <Link href="products/visiumload">
+                                    <Link href="products/visium-load">
                                         <div className=" hover:bg-gray-200 rounded-md px-6 pt-2 pb-3 cursor-pointer">   
                                         <div className=" flex flex-row gap-2 items-center">
                                             <Gauge size={32} className="m-0" weight="duotone" color="#3f3f3f" />

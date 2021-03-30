@@ -1,23 +1,25 @@
-import ProductHeroSection from "../../components/Products/ProductHeroSection"
-import SecondaryMenu from "../../components/SecondaryMenu/SecondaryMenu"
+import ProductHeroSection from "../../../components/Products/ProductHeroSection"
+import SecondaryMenu from "../../../components/SecondaryMenu/SecondaryMenu"
 import Head from 'next/head'
 import Image from 'next/image'
-import Text_Main from "../../components/Text/Text_Main"
-import H2 from "../../components/Text/H2"
-import Footer from "../../components/Footer"
+import Text_Main from "../../../components/Text/Text_Main"
+import H2 from "../../../components/Text/H2"
+import Footer from "../../../components/Footer"
 import { AppWindow, Book, Cloud, CloudArrowUp, Coin, Database, Gauge, Gear, ProjectorScreenChart, Translate, TreeStructure, Users } from 'phosphor-react'
-import ScrollUpBtn from "../../components/Products/ScrollUpBtn"
-import VisiumFarmFeatures from "./VisiumFarmFeatures"
-import CTA from "../../components/CTA"
-import TestimonialQuotes from "../../components/TestimonialQuotes"
+import ScrollUpBtn from "../../../components/Products/ScrollUpBtn"
+import VisiumFarmFeatures from "./features"
+import CTA from "../../../components/CTA"
+import TestimonialQuotes from "../../../components/TestimonialQuotes"
 
 const visiumfarm = () => {
+
+
     return (
         <>
             <head>
                 <title>Visium Farm: On-Prem Cihaz Parkuru Çözümü</title>
             </head>
-            <SecondaryMenu name="Farm" />
+            <SecondaryMenu name="Farms"/>
             <ProductHeroSection id="overview" heading="On-Prem Cihaz Parkuru Çözümü" subheading="gerçej cihazlarda manuel testlerle karmaşık text senaryolarının üstesinden gelin veya paralel olarak çok sayıda otomasyon testi koşturun." backgroundSrc="" textPosition="left" />
             <section  className="max-w-7xl container flex px-8 sm:px-8 md:px-10 lg:px:24 xl:px-32 xl:mx-auto self-center flex-col mt-10">
                 <H2 allign="center">Neden Visium Farm’ı tercih etmelisiniz?</H2>
