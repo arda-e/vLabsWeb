@@ -17,16 +17,16 @@ const Footer2 = () => {
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">PRODUCTS</h2>
         <nav className="list-none mb-10">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Visium Farm</a>
+            <Link href="/visium-farm"><a className="text-gray-600 hover:text-gray-800">Visium Farm</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Visium Go</a>
+            <Link href="/visium-go"><a className="text-gray-600 hover:text-gray-800">Visium Go</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Visium Crowd</a>
+            <Link href="/visium-crowd"><a className="text-gray-600 hover:text-gray-800">Visium Crowd</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Visium Manage </a>
+            <Link href="/visium-manage"><a className="text-gray-600 hover:text-gray-800">Visium Manage </a></Link>
           </li>
         </nav>
       </div>
@@ -34,13 +34,13 @@ const Footer2 = () => {
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">RESOURCES</h2>
         <nav className="list-none mb-10">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Support</a>
+            <Link href="/support"><a className="text-gray-600 hover:text-gray-800">Support</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Blog</a>
+            <Link href="/blog"><a className="text-gray-600 hover:text-gray-800">Blog</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Visium Academy</a>
+            <Link href="/visium-academy"><a className="text-gray-600 hover:text-gray-800">Visium Academy</a></Link>
           </li>
         </nav>
       </div>
@@ -51,13 +51,10 @@ const Footer2 = () => {
             <Link href="/about-us"><a className="text-gray-600 hover:text-gray-800">About Us</a></Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Career</a>
+            <Link href="/career"><a className="text-gray-600 hover:text-gray-800">Career</a></Link>
           </li>
           <li>
             <Link href="/contact"><a className="text-gray-600 hover:text-gray-800">Contact Us</a></Link>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800"></a>
           </li>
         </nav>
       </div>
